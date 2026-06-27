@@ -1,0 +1,6 @@
+*.pdf
+*.png
+!gallery/*.png
+!thumbnail.png
+.DS_Store
+.omc/
