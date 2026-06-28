@@ -65,7 +65,7 @@ Full command reference: `reference/commands.md`.
   bold auto-numbers are local to the notes.
 
 ## See also
-- `../examples/content.typ` — the worked showcase ("Descent"): every device in one
-  mini-chapter; compile it for the light theme. `dark.typ` / `book.typ` wrap the same
-  shared body (`body.typ`) under other option combos — compile any to see it live.
+- `../examples/example.typ` — the worked showcase ("Descent"): every device in one
+  self-contained mini-chapter. Compile it directly (light `notes` by default;
+  uncomment `theme: "dark"` / `prose: "book"` at the top for the other modes).
 - `../README.md` — install, the toolkit table, and known gaps vs. the LaTeX original.
