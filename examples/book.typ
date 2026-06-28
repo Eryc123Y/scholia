@@ -1,4 +1,4 @@
-// Option: prose: "book" (first-line indent + tight paragraphs). Same body as demo.typ.
+// Option: prose: "book" (first-line indent + tight paragraphs). Same body as content.typ.
 #import "../src/lib.typ": *
 #show: scholia.with(prose: "book")
-#include "content.typ"
+#include "body.typ"

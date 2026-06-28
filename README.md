@@ -40,10 +40,10 @@ last: `#theorem[title][body]` (omit the title with `#theorem[body]`). An optiona
 middle slot is a small **tag** — a source or claim-ID, styled by `label-it`:
 `#theorem[title][GSM 211, Thm 2.16][body]`.
 
-See it all on one page in [`examples/content.typ`](examples/content.typ); the entry
-files apply each option and `#include` it, doubling as visual tests:
-[`demo`](examples/demo.typ) (defaults) · [`dark`](examples/dark.typ) (`theme`) ·
-[`book`](examples/book.typ) (`prose`).
+Compile [`examples/content.typ`](examples/content.typ) to see every device (light
+theme). [`dark`](examples/dark.typ) (`theme`) and [`book`](examples/book.typ)
+(`prose`) wrap the same shared body ([`body.typ`](examples/body.typ)) with different
+options, doubling as visual tests.
 
 ## The toolkit
 

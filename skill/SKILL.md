@@ -66,6 +66,6 @@ Full command reference: `reference/commands.md`.
 
 ## See also
 - `../examples/content.typ` — the worked showcase ("Descent"): every device in one
-  mini-chapter. `demo.typ` / `dark.typ` / `book.typ` render it under each option combo;
-  compile any of them to see the grammar live.
+  mini-chapter; compile it for the light theme. `dark.typ` / `book.typ` wrap the same
+  shared body (`body.typ`) under other option combos — compile any to see it live.
 - `../README.md` — install, the toolkit table, and known gaps vs. the LaTeX original.
