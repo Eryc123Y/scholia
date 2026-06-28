@@ -7,7 +7,7 @@
   "Descent",
   subtitle: "A fill-in primer on convexity and first-order methods",
   author: "Eric Yang",
-  date: "Michaelmas Term",
+  date: datetime.today().display("[month repr:long] [day], [year]"),
   kicker: "Optimization · Notebook 4",
 )
 
