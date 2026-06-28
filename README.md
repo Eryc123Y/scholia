@@ -68,6 +68,10 @@ files apply each option and `#include` it, doubling as visual tests:
 | `paper` | `"a4"` (default) · `"us-letter"` · … | page size |
 | `fonts` | dict overriding `default-fonts` | e.g. `(heading: ("Gill Sans",))` |
 
+| Light | Dark |
+|:---:|:---:|
+| ![Cover, light theme](gallery/cover-light.png) | ![Cover, dark theme](gallery/cover-dark.png) |
+
 ## Fonts
 
 Every role is a **fallback list — the nice face first, an embedded face last** — so
