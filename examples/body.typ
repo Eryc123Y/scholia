@@ -2,7 +2,7 @@
 // device. Include-only: it has NO `#show: scholia`, so don't compile it directly
 // (theorems need the wrapper to be skinned). The entry files content.typ / dark.typ
 // / book.typ apply the wrapper with different options and `#include` this body.
-#import "../src/lib.typ": *
+#import "@preview/scholia:0.1.0": *
 
 #cover(
   "Descent",
