@@ -2,11 +2,6 @@ MIT License
 
 Copyright (c) 2026 Eric Yang (杨星宇)
 
-This template is an independent Typst reimplementation and major overhaul,
-inspired by the design of the loom-notes XeLaTeX project
-(https://github.com/Polaris-Aeterna/loom-notes). No source code from that
-project is reused; only its general design served as a model.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

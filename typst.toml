@@ -10,7 +10,7 @@ keywords = ["notes", "study", "theorem", "active-recall", "mathematics"]
 categories = ["book", "components"]
 disciplines = ["computer-science", "mathematics", "education"]
 compiler = "0.13.0"
-exclude = ["examples", "skill"]
+exclude = ["examples", "skill", "gallery"]
 
 [template]
 path = "template"
