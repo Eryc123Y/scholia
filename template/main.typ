@@ -3,7 +3,6 @@
 #show: scholia.with(
   // theme: "dark",   // light (default) | dark (slate)
   // prose: "book",   // notes (default, no indent) | book (first-line indent)
-  // double: true,    // single (default) | two-sided
 )
 
 #cover(

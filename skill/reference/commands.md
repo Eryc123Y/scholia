@@ -2,13 +2,12 @@
 
 ```typ
 #import "@preview/scholia:0.1.0": *
-#show: scholia   // .with(prose: "book", double: true, paper: "us-letter", fonts: (…))
+#show: scholia   // .with(prose: "book", paper: "us-letter", fonts: (…))
 ```
 
 Options on `scholia`: `theme: "light"|"dark"` (default light; dark = slate — swaps the
 whole colour card), `prose: "notes"|"book"` (default notes — no indent + para spacing;
-book — first-line indent + tight), `double: false|true` (single/two-sided),
-`paper`, `fonts:` (overrides the per-role fallback lists). 中文 works out of the box
+book — first-line indent + tight), `paper`, `fonts:` (overrides the per-role fallback lists). 中文 works out of the box
 (Songti SC fallback). Body/math default to STIX Two (Libertinus / New CM Math fallback).
 
 ## Cover & structure

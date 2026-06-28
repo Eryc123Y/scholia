@@ -28,7 +28,7 @@ a *spine* (one organizing idea) so a chapter becomes a single story, not a trans
    dictionary.)
 2. **Scaffold.** Create a `.typ` that opens with
    `#import "@preview/scholia:0.1.0": *` then `#show: scholia` (options:
-   `prose: "notes"|"book"`, `double:`, `fonts:`).
+   `prose: "notes"|"book"`, `fonts:`).
    Put the master spine on the front page (a cheat-table / map, partly blank), then
    `#include` one file per section under `sections/`.
 3. **Draft each section in the Scholia grammar** (see the table below).
@@ -66,6 +66,6 @@ Full command reference: `reference/commands.md`.
 
 ## See also
 - `../examples/content.typ` — the worked showcase ("Descent"): every device in one
-  mini-chapter. `demo.typ` / `dark.typ` / `book.typ` / `double.typ` render it under each
-  option combo; compile any of them to see the grammar live.
+  mini-chapter. `demo.typ` / `dark.typ` / `book.typ` render it under each option combo;
+  compile any of them to see the grammar live.
 - `../README.md` — install, the toolkit table, and known gaps vs. the LaTeX original.

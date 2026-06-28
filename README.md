@@ -16,7 +16,7 @@ to work out. The source is your answer key.
 ```typ
 #import "@preview/scholia:0.1.0": *
 
-// options: theme: "light" | "dark" · prose: "notes" | "book" · double: false | true · fonts: (…)
+// options: theme: "light" | "dark" · prose: "notes" | "book" · fonts: (…)
 #show: scholia
 
 #cover("Title", subtitle: "subtitle", author: "Your Name", date: "2026")
@@ -43,7 +43,7 @@ middle slot is a small **tag** — a source or claim-ID, styled by `label-it`:
 See it all on one page in [`examples/content.typ`](examples/content.typ); the entry
 files apply each option and `#include` it, doubling as visual tests:
 [`demo`](examples/demo.typ) (defaults) · [`dark`](examples/dark.typ) (`theme`) ·
-[`book`](examples/book.typ) (`prose`) · [`double`](examples/double.typ) (`double`).
+[`book`](examples/book.typ) (`prose`).
 
 ## The toolkit
 
@@ -65,7 +65,6 @@ files apply each option and `#include` it, doubling as visual tests:
 |---|---|---|
 | `theme` | `"light"` (default) · `"dark"` | swaps the whole colour card — page, text, knots, accents (dark = slate) |
 | `prose` | `"notes"` (default) · `"book"` | notes = no indent + paragraph spacing; book = first-line indent + tight |
-| `double` | `false` (default) · `true` | single- vs two-sided (notes move to the outer margin) |
 | `paper` | `"a4"` (default) · `"us-letter"` · … | page size |
 | `fonts` | dict overriding `default-fonts` | e.g. `(heading: ("Gill Sans",))` |
 

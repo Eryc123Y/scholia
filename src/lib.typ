@@ -126,9 +126,8 @@
 // ===========================================================================
 // theme:  "light" (default) | "dark" (slate)
 // prose:  "notes" (no indent, para spacing) | "book" (first-line indent, tight)
-// double: false (single-sided) | true (two-sided, notes go to the outer margin)
 // fonts:  overrides merged over `default-fonts`
-#let scholia(theme: "light", prose: "notes", double: false, paper: "a4", fonts: none, body) = {
+#let scholia(theme: "light", prose: "notes", paper: "a4", fonts: none, body) = {
   let p = palettes.at(theme)
   let f = resolve-fonts(fonts)
   let hfont = f.heading
@@ -145,7 +144,7 @@
   show: marginalia.setup.with(
     inner: (far: 6mm, width: 12mm, sep: 6mm),
     outer: (far: 6mm, width: 26mm, sep: 7mm),
-    top: 2cm, bottom: 2.3cm, book: double,
+    top: 2cm, bottom: 2.3cm,
   )
 
   set text(font: (..f.body, ..f.cjk), size: 11pt, fill: p.ink, lang: "en")
