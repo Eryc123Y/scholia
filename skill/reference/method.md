@@ -38,7 +38,7 @@ Keep the source's section order only if it *is* the best shape.
 
 `note` (thesis) → `trigger`/`block-head` (the paradigm + master fact) → cheat-table →
 knots (definition · theorem · example) with their gaps → a `note` of "why it goes this
-way" → `loose`/`recall` (open threads).
+way" → `recall` / `sidenote` (margin prompts).
 
 ## Tone
 

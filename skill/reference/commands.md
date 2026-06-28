@@ -26,8 +26,8 @@ book — first-line indent + tight), `double: false|true` (single/two-sided),
   `definition[sheaf][…]`. An optional middle slot is a **tag** (source / claim-ID),
   styled by `label-it`: `theorem[Bézout][GSM 211, Thm. 2.16][…]`.
 - **Cross-reference (native):** label a knot with `<thm:soa>` after it, refer with
-  `@thm:soa` → renders "Theorem 2.1", clickable. Prefer this over `warp/pick` for
-  pointing at a numbered knot.
+  `@thm:soa` → renders "Theorem 2.1", clickable. Use native labels for every
+  cross-reference.
 
 ## The intuition voice
 - `note[…]` — the informal "what's really going on", on a soft wash. Read-only layer.
@@ -42,12 +42,11 @@ book — first-line indent + tight), `double: false|true` (single/two-sided),
 - `fillin(width: 2.2cm)` — an empty ruled blank to write the answer in (default 2.2cm).
 - `yourturn[…]` — the amber "Your turn." box: the active-input zone.
 - `workspace(n: 3)` — `n` faint ruled lines to write on (for print; delete if typing).
-- `recall[question]` — a quick active-recall prompt (a `?` glyph), parked in the right margin.
 
-## The selvage edge
-- `loose[…]` — an open question / exercise (selvage aside).
-- `warp("key")` — declare a recurring object (drops a label to cross-ref).
-- `pick("key")` — pick it up later: a `[ key ↩ ]` chip linked back to the `warp`.
+## Margin notes
+- `sidenote[…]` — one Tufte-style margin note (unnumbered). Optional `symbol:` marker.
+- `recall[question]` — preset: a `sidenote` marked with `?` (active-recall prompt).
+- For cross-references, use native labels (`<lbl>` … `@lbl`), not a bespoke mechanism.
 
 ## Tables
 Use Typst's native `table`. Pattern for a cheat-sheet / dictionary:

@@ -18,17 +18,16 @@ The source's LaTeX math must be translated. Common maps:
 template: `typst compile main.typ "p-{p}.png" --ppi 150`. (PDF output is unaffected.)
 
 ## Margin notes (via marginalia)
-`loose`, `recall`, and `warp` are real right-margin notes (backed by
-`@preview/marginalia`); they auto-avoid overlap, so the LaTeX "don't put a `loose` right
-after a `yourturn`'s `recall` or they collide" trap is gone. Keep each note short — the
-right margin is ~26mm wide. The left "selvage rail" of the LaTeX original was dropped.
+`sidenote` (and its `recall` preset) are real right-margin notes backed by
+`@preview/marginalia`; they auto-avoid overlap. Keep each note short — the right margin
+is ~26mm wide.
 
 ## Layout
 - **Several `fillin()` blanks on one math display can overflow.** Stack them in
   `$ aligned(...) $` (a 2×2 layout) instead of one long row.
 - **A wide table column overflows.** Give the long/last column `1fr` (it wraps); fixed/`auto`
   columns do not wrap.
-- Keep `warp("key")` keys short.
+- Keep margin `sidenote`s short so they don't overflow the ~26mm margin.
 
 ## Style
 - Go light on em-dashes (`—`) in prose; prefer commas/colons.

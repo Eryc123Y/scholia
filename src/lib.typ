@@ -3,7 +3,7 @@
 //
 //   knot   = a result (theorem box, via frame-it)
 //   note   = the intuition voice
-//   loose  = an open question (margin thread)
+//   sidenote = a Tufte-style margin note (recall = the "?" active-recall preset)
 
 #import "@preview/marginalia:0.3.1" as marginalia: note as _note
 #import "colors.typ": *
@@ -67,24 +67,22 @@
 // ===========================================================================
 //  MARGIN NOTES (right selvage, via marginalia, no number marker)
 // ===========================================================================
-#let _aside(marker, role, body) = _note(counter: none)[
+// one Tufte-style margin note (unnumbered). An optional leading `symbol` marks
+// its intent; colour follows the theme accent.
+#let sidenote(body, symbol: none) = _note(counter: none)[
   #context {
     let p = active.get()
     set text(font: (..default-fonts.sans, ..default-fonts.cjk), size: 0.82em, fill: p.muted)
     set par(leading: 0.5em)
-    [#text(fill: p.at(role), weight: "bold")[#marker] #body]
+    if symbol != none { text(fill: p.thm, weight: "bold")[#symbol]; h(0.3em) }
+    body
   }
 ]
 
-#let loose(body) = _aside(sym.arrow.squiggly, "eg", body)
-#let recall(body) = _aside([?], "thm", body)
-#let warp(key) = {
-  _aside(sym.arrow.squiggly, "thm", key)
-  [#metadata(key)#label("warp:" + key)]
-}
-#let pick(key) = context link(label("warp:" + key))[
-  #text(font: default-fonts.sans, size: 0.75em, fill: active.get().thm)[[ #key #sym.arrow.hook ]]
-]
+// active-recall prompt: a margin note marked with "?"
+#let recall(body) = sidenote(body, symbol: [?])
+
+// (cross-references use Typst's native labels: put `<lbl>` after a knot, `@lbl` to refer.)
 
 // ===========================================================================
 //  THE COVER

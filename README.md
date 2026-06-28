@@ -57,7 +57,7 @@ files apply each option and `#include` it, doubling as visual tests:
 | a blank to fill | `fillin(width: 2.2cm)` |
 | a proof gap | `TODO[the missing step]` |
 | a do-it-yourself box | `yourturn[…]` + `workspace(n: 3)` |
-| a margin thread | `loose[…]` · `recall[…]` · `warp("key")` / `pick("key")` |
+| a margin note | `sidenote[…]` · `recall[…]` (the `?` preset) |
 
 ## Options (`#show: scholia.with(…)`)
 

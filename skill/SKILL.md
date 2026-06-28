@@ -52,8 +52,8 @@ a *spine* (one organizing idea) so a chapter becomes a single story, not a trans
 | worked instance | `example[name][…]` (amber knot) | setup given |
 | do-it-yourself | `yourturn[… #workspace(n: 3)]` | the active zone; the example, restaged |
 | margin recall | `recall[question]` | a parked active-recall prompt |
-| open thread | `loose[…]` | an exercise to pull next time |
-| cross-ref thread | `warp("key")` / `pick("key")` | declare and reuse a recurring object |
+| a margin prompt | `sidenote[…]` · `recall[…]` | a side annotation; `recall` is the `?` self-test preset |
+| cross-reference | `<thm:x>` … `@thm:x` | label a knot, refer back (native) |
 
 Full command reference: `reference/commands.md`.
 

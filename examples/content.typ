@@ -28,7 +28,6 @@ $P(s' | s, a)$, a reward $r(s, a)$, and a #keyword[discount] $gamma in [0, 1)$ t
 makes far-off reward worth #fillin(width: 2.6cm) than reward now.
 ] <def:mdp>
 
-#warp("gamma")
 The discount $gamma$ is the single knob that makes the infinite sum below converge —
 keep an eye on it.
 
@@ -38,8 +37,8 @@ $ V^pi (s) = bb(E)_pi [ sum_(t=0)^infinity gamma^t r(s_t, a_t) | s_0 = s ]. $
 The goal is $V^* (s) = max_pi V^pi (s)$ — the best promise any policy can make.
 ] <def:value>
 
-#loose[Is the maximising $pi$ unique? The _value_ $V^*$ is; a policy attaining it need
-not be. Revisit once ties appear.]
+#sidenote[Is the maximising $pi$ unique? The _value_ $V^*$ is; a policy attaining it
+need not be. Revisit once ties appear.]
 The two definitions are one statement read forwards and backwards.
 
 = The Bellman Operator
@@ -61,7 +60,7 @@ Fix a state $s$ and bound the difference of the two maxima:
 $ |(T U)(s) - (T V)(s)| <= gamma max_(s') |U(s') - V(s')|. $
 #TODO[the step $|max_a f(a) - max_a g(a)| <= max_a |f(a) - g(a)|$]
 Taking the max over $s$ gives the claim; uniqueness is then Banach — this is where
-#pick("gamma") earns its keep.
+$gamma < 1$ earns its keep.
 ]
 
 #example[value iteration, one sweep][
