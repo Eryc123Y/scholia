@@ -13,6 +13,12 @@ The source's LaTeX math must be translated. Common maps:
 - A literal `→` renders fine in math as `arrow.r`; in prose Typst falls back fonts automatically,
   so the LaTeX "Optima lacks the glyph" trap does not apply — but check display headings.
 
+## Emphasis/strong delimiters are word-bounded
+`*…*` (strong) and `_…_` (emph) only open and close at a word boundary, so a marker
+*inside* a word fails to close: `*under*estimate` → "unclosed delimiter". Emphasise the
+whole word (`*underestimate*`), or use the function form for a partial word:
+`#strong[under]estimate`, `#emph[pre]fix`.
+
 ## Multi-page PNG export needs a page template
 `typst compile main.typ out.png` **errors** for a multi-page doc. Use a `{p}` (or `{0p}`)
 template: `typst compile main.typ "p-{p}.png" --ppi 150`. (PDF output is unaffected.)

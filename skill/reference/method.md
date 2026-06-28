@@ -42,6 +42,6 @@ way" → `recall` / `sidenote` (margin prompts).
 
 ## Tone
 
-Warm, concrete, lean. Prefer the source's best concrete example over an abstract one.
+Plain, concrete, lean. Prefer the source's best concrete example over an abstract one.
 Cite the source's numbering in each knot's title so the learner can check the answer key.
 Go light on em-dashes in prose. State honestly; don't inflate.

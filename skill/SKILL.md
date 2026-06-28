@@ -51,8 +51,7 @@ a *spine* (one organizing idea) so a chapter becomes a single story, not a trans
 | proof | `proof[… #TODO[step]]` | skeleton; the learner fills the step |
 | worked instance | `example[name][…]` (amber knot) | setup given |
 | do-it-yourself | `yourturn[… #workspace(n: 3)]` | the active zone; the example, restaged |
-| margin recall | `recall[question]` | a parked active-recall prompt |
-| a margin prompt | `sidenote[…]` · `recall[…]` | a side annotation; `recall` is the `?` self-test preset |
+| margin note | `sidenote[…]` · `recall[…]` | a side annotation; `recall` is the `?` active-recall preset |
 | cross-reference | `<thm:x>` … `@thm:x` | label a knot, refer back (native) |
 
 Full command reference: `reference/commands.md`.
@@ -66,5 +65,7 @@ Full command reference: `reference/commands.md`.
   bold auto-numbers are local to the notes.
 
 ## See also
-- `../examples/demo.typ` — every visual feature on one page (the live cheat-sheet).
+- `../examples/content.typ` — the worked showcase ("Descent"): every device in one
+  mini-chapter. `demo.typ` / `dark.typ` / `book.typ` / `double.typ` render it under each
+  option combo; compile any of them to see the grammar live.
 - `../README.md` — install, the toolkit table, and known gaps vs. the LaTeX original.
