@@ -24,10 +24,8 @@ make it yours. #whisper[The margin is where you argue back with the text.]
 ]
 
 #definition[convex function][
-$f: bb(R)^n -> bb(R)$ is convex if, for every $x, y$ and $lambda in [0, 1]$, the chord
-lies #fillin(width: 2cm) the graph:
+$f: bb(R)^n -> bb(R)$ is convex if, for every $x, y$ and $lambda in [0, 1]$,
 $ f(lambda x + (1 - lambda) y) <= lambda f(x) + (1 - lambda) f(y). $
-Fill the blank, then make sure you can say *why* the sign points that way.
 ] <def:convex>
 
 #recall[Which way does the inequality face — and what happens to it for concave $f$?]
@@ -97,13 +95,14 @@ $f(x_t) - f^* <= (1 - mu slash L)^t (f(x_0) - f^*)$.
 
 #example[one step on a quadratic][
 For $f(x) = 1/2 x^top A x$ with $0 prec.eq A prec.eq L I$, the update with step
-$eta =$ #fillin(width: 1.4cm) contracts the error by the factor $||I - eta A||$.
+$eta = 1/L$ contracts the error: $||x_(t+1) - x^*|| = ||I - eta A|| dot ||x_t - x^*||$.
 ]
 
 #yourturn[
-Recover that contraction yourself: expand $||x_(t+1) - x^*||^2$ for the quadratic, then
-choose $eta$ to make the factor as small as possible.
-#workspace(n: 4)
+Derive the contraction yourself. Expand $||x_(t+1) - x^*||^2$ for the quadratic,
+then find the $eta$ that minimises the factor. What is the optimal $eta$?
+$ eta^* = #fillin(width: 2cm) $
+#workspace(n: 3)
 ]
 
 #sidenote[What fails when $f$ is convex but *not* smooth? Subgradients survive, but the
